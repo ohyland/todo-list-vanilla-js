@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+* {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body,
+input {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(135deg, #e1f2ff 10%, #e4f4ff 100%);
+}
+input {
+  width: 100%;
+  font-size: 16px;
+  background: white;
+  padding: 3%;
+  border: 2px solid #e0f0ff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 19px 1px rgba(0, 0, 0, 0.23);
+}
+input::placeholder {
+  font-style: italic;
+}
+header {
+  margin: 0;
+  padding: 20px;
+  letter-spacing: 2px;
+  color: grey;
+  text-align: center;
+}
+.wrapper {
+  width: 383px;
+  margin: 0 auto;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+/*list*/
+.completed li {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.262);
+}
+.todo-list {
+  position: relative;
+  list-style-type: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.todo {
+  display: flex;
+  background-color: white;
+  margin-top: 3%;
+  border-radius: 5px;
+  padding: 3%;
+  box-shadow: 0px 3px 19px 1px rgba(0, 0, 0, 0.23);
+  justify-content: space-between;
+}
+/*buttons*/
+button {
+  color: rgb(67, 67, 67);
+  position: absolute;
+  border: none;
+  height: 20px;
+  width: 20px;
+  right: 131px;
+  top: 26%;
+  border-radius: 50px;
+}
+.delete-btn,
+.check-btn {
+  font-size: 10px;
+  position: static;
+  width: auto;
+  padding: 0 5px;
+}
+.check-btn {
+  transition: 0.5s;
+  margin-left: auto;
+}
+.check-btn:hover {
+  background-color: rgb(188, 238, 242);
+}
+.delete-btn {
+  transition: 0.5s;
+  margin-left: 2%;
+}
+.delete-btn:hover {
+  background-color: rgb(242, 188, 188);
+}
+/*select*/
+select {
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  cursor: pointer;
+}
+.select {
+  display: flex;
+  margin-left: 5px;
+  padding: 5px;
+  border: 2px solid #e0f0ff;
+  background-color: white;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 3px 19px 1px rgba(0, 0, 0, 0.23);
+}
